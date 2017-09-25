@@ -1,0 +1,1461 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TITLE</title>
+		<meta name="theme-color" content="#5b345e">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	</head>
+	<body>
+		<style>
+		.areaForLoader {background: #0049da; overflow: hidden; position: fixed; left: 0; top: 0; right:0; bottom:0; z-index: 9999;}
+		.load{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%); width:100px; height:100px;}
+		/*.load hr{border:0;margin:0;width:40%;height:40%;position:absolute;border-radius:50%;animation:spin 2s ease infinite}*/
+		/*.load :first-child{background:#19A68C;animation-delay:-1.5s}
+		.load :nth-child(2){background:#F63D3A;animation-delay:-1s}
+		.load :nth-child(3){background:#FDA543;animation-delay:-0.5s}
+		.load :last-child{background:#193B48}
+		@keyframes spin{
+			0%,100%{transform:translate(0)}
+			25%{transform:translate(160%)}
+			50%{transform:translate(160%, 160%)}
+			75%{transform:translate(0, 160%)}
+		}*/
+		.preloader {
+      margin: 300px auto;
+      width: 70px;
+      height: 30px;
+      text-align: center;
+      font-size: 10px;
+    }
+
+    .preloader > div {
+      background-color: #fff;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      display: inline-block;
+
+      -webkit-animation: stretchdelay 0.7s infinite ease-in-out;
+      animation: stretchdelay 0.7s infinite ease-in-out;
+    }
+
+    .preloader .circ2 {
+      -webkit-animation-delay: -0.6s;
+      animation-delay: -0.6s;
+    }
+
+    .preloader .circ3 {
+      -webkit-animation-delay: -0.5s;
+      animation-delay: -0.5s;
+    }
+
+    .preloader .circ4 {
+      -webkit-animation-delay: -0.4s;
+      animation-delay: -0.4s;
+    }
+
+    .preloader .circ5 {
+      -webkit-animation-delay: -0.3s;
+      animation-delay: -0.3s;
+    }
+
+    @-webkit-keyframes stretchdelay {
+      0%, 40%, 100% { -webkit-transform: translateY(-10px) }
+      20% { -webkit-transform: translateY(-20px) }
+    }
+
+    @keyframes stretchdelay {
+      0%, 40%, 100% {
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+      } 20% {
+        transform: translateY(-20px);
+        -webkit-transform: translateY(-20px);
+      }
+    }
+		</style>
+		<div class="areaForLoader">
+   		<div class="preloader">
+				<div class="circ1"></div>
+    	  <div class="circ2"></div>
+    	  <div class="circ3"></div>
+      	<div class="circ4"></div>
+
+
+				<!-- <div class="load"><hr/><hr/><hr/><hr/></div> -->
+			</div>
+		</div>
+		<div class="container">
+			<!-- Верхняя строка -->
+			<div id="main" class="row scrollto">
+				<div class="col-lg-2 col-md-2 col-xs-12 smedia">
+					<a href="https://www.facebook.com/umhgroup"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
+					<a href="https://www.facebook.com/umhgroup"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+				</div>
+				<div class="col-lg-8 col-md-8 col-xs-12 text-right">
+					<form action="?gr" class="search-form">
+						<div class="input-group stylish-input-group">
+							<input type="text" class="form-control"  placeholder="Поиск" >
+							<span class="input-group-addon">
+								<button type="submit">
+									<span class="glyphicon glyphicon-search"></span>
+								</button>
+							</span>
+						</div>
+					</form>
+				</div>
+				<div class="col-lg-2 col-md-2 col-xs-12 text-right">
+					<div class="form-group">
+						<ul class='languales'>
+							<li class='active'>
+								<a href="#">UA</a>
+							</li>
+							<li>
+								<a href='#'>RU</a>
+							</li>
+							<li>
+								<a href='#'>EN</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- Верхняя строка -->
+		</div>
+		<hr class="mt-10">
+		<section id="stiky" style="z-index: 5!important;">
+			<div id="header" class="container mb-10 mt-10">
+				<!-- лого -->
+				<div class="row">
+					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-2"></div>
+					<div class="col-lg-10 col-lg-md col-sm-10 col-xs-8 text-center">
+						<a href="#main" class="go_to">
+							<img id="logo-img" src="images/umh-logo.svg" class="hidden-xs">
+								<img src="images/umh-logo.svg" class="mob-logo hidden-lg hidden-md hidden-sm">
+						</a>
+					</div>
+					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-2">
+						<button class="toggle-hamburger toggle-hamburger__animx is-active">
+						  <span>menu toggle</span>
+						</button>
+					</div>
+				</div>
+				<!-- лого -->
+
+			</div>
+		</section>
+			<section id="stiky2" style="z-index: 5!important;">
+			<div id="menu">
+				<div class="container">
+					<!-- меню -->
+					<ul class="nav nav-justified center-block" >
+						<!-- <li><a href="#main">Главная страница</a></li> -->
+						<li><a href="#wearethegreatest" class="go_to">Мы лучшие</a></li>
+						<li><a href="#whoweare" class="go_to">UMH Group</a></li>
+						<li><a href="#press-center" class="go_to">Пресс центр</a></li>
+						<li><a href="#b2b" class="go_to">Сотрудничество</a></li>
+						<li><a href="#career" class="go_to">Карьера</a></li>
+						<li><a href="#footer" class="go_to">Контакты</a></li>
+					</ul>
+					<!-- меню -->
+				</div>
+			</div>
+		</section>
+		<div class="container-fluid1">
+			<!-- слайдер -->
+			<div id="carousel-example-generic" class="hidden-xs carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+				</ol>
+				<!-- Wrapper for slides -->
+				<div id="slider" class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img alt="alt" src="images/slider/2.jpg" class="img-responsive">
+						<div class="carousel-caption">
+							<h3 class="text-left hint-title">В эфире 24 часа в сутки</h3>
+							<p class="hint-content hidden-xs">Получить статус «LEADER OF THE BRANCH» («Лидер отрасли») от НБР – достижение, которым может гордиться любое предприятие, занимающееся бизнесом в нашей стране. </p>
+							<a href="#">
+								<p class="hint-linkto">Подробнее...</p>
+							</a>
+						</div>
+					</div>
+					<div class="item">
+						<img alt="alt" src="images/slider/3.jpg" class="img-responsive">
+						<div class="carousel-caption">
+							<h3 class="text-left hint-title">Новости онлайн каждую минуту</h3>
+							<p class="hint-content hidden-xs">Получить статус «LEADER OF THE BRANCH» («Лидер отрасли») от НБР – достижение, которым может гордиться любое предприятие, занимающееся бизнесом в нашей стране. </p>
+							<a href="#">
+								<p class="hint-linkto">Подробнее...</p>
+							</a>
+						</div>
+					</div>
+					<div class="item">
+						<img alt="alt" src="images/slider/4.jpg" class="img-responsive">
+						<div class="carousel-caption">
+							<h3 class="text-left hint-title">Информация для принятия решений</h3>
+							<p class="hint-content hidden-xs">Получить статус «LEADER OF THE BRANCH» («Лидер отрасли») от НБР – достижение, которым может гордиться любое предприятие, занимающееся бизнесом в нашей стране. </p>
+							<a href="#">
+								<p class="hint-linkto">Подробнее...</p>
+							</a>
+						</div>
+					</div>
+					<div class="item">
+						<img alt="alt" src="images/slider/5.jpg" class="img-responsive">
+						<div class="carousel-caption">
+							<h3 class="text-left hint-title">Всегда в центре событий</h3>
+							<p class="hint-content hidden-xs">Получить статус «LEADER OF THE BRANCH» («Лидер отрасли») от НБР – достижение, которым может гордиться любое предприятие, занимающееся бизнесом в нашей стране. </p>
+							<a href="#">
+								<p class="hint-linkto">Подробнее...</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<img alt="alt" class="control-left" src="images/left_arrow.png">
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<img alt="alt" class="control-right" src="images/right_arrow.png">
+				</a>
+			</div>
+			<!-- слайдер -->
+
+
+			<!-- mobile слайдер -->
+			<div id="carousel-example-generic-mob" class="hidden-lg hidden-md hidden-sm carousel slide" data-ride="carousel">
+
+				<!-- Wrapper for slides -->
+				<div id="slider-mob" class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img alt="alt" src="images/slider/mob/2.jpg" class="img-responsive">
+						<div class="carousel-caption">
+							<h3 class="text-left hint-title">В эфире 24 часа в сутки</h3>
+							<p class="hint-content hidden-xs">Получить статус «LEADER OF THE BRANCH» («Лидер отрасли») от НБР – достижение, которым может гордиться любое предприятие, занимающееся бизнесом в нашей стране. </p>
+							<a href="#">
+								<p class="hint-linkto">Подробнее...</p>
+							</a>
+						</div>
+					</div>
+					<div class="item">
+						<img alt="alt" src="images/slider/mob/3.jpg" class="img-responsive">
+						<div class="carousel-caption">
+							<h3 class="text-left hint-title">Новости онлайн каждую минуту</h3>
+							<p class="hint-content hidden-xs">Получить статус «LEADER OF THE BRANCH» («Лидер отрасли») от НБР – достижение, которым может гордиться любое предприятие, занимающееся бизнесом в нашей стране. </p>
+							<a href="#">
+								<p class="hint-linkto">Подробнее...</p>
+							</a>
+						</div>
+					</div>
+					<div class="item">
+						<img alt="alt" src="images/slider/mob/4.jpg" class="img-responsive">
+						<div class="carousel-caption">
+							<h3 class="text-left hint-title">Информация для принятия решений</h3>
+							<p class="hint-content hidden-xs">Получить статус «LEADER OF THE BRANCH» («Лидер отрасли») от НБР – достижение, которым может гордиться любое предприятие, занимающееся бизнесом в нашей стране. </p>
+							<a href="#">
+								<p class="hint-linkto">Подробнее...</p>
+							</a>
+						</div>
+					</div>
+					<div class="item">
+						<img alt="alt" src="images/slider/mob/5.jpg" class="img-responsive">
+						<div class="carousel-caption">
+							<h3 class="text-left hint-title">Всегда в центре событий</h3>
+							<p class="hint-content hidden-xs">Получить статус «LEADER OF THE BRANCH» («Лидер отрасли») от НБР – достижение, которым может гордиться любое предприятие, занимающееся бизнесом в нашей стране. </p>
+							<a href="#">
+								<p class="hint-linkto">Подробнее...</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic-mob" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true">
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic-mob" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true">
+				</a>
+			</div>
+			<!-- слайдер -->
+
+		</div>
+		<section id="wearethegreatest" class="scrollto">
+			<div class="container">
+				<!-- мы лучшие -->
+				<div class="row scrollto">
+					<div class="col-lg-12">
+						<h2 class="text-center">Мы лучшие</h2>
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active"><a href="#mission" aria-controls="mission" role="tab" data-toggle="tab">Миссия</a></li>
+							<li role="presentation"><a href="#history" aria-controls="history" role="tab" data-toggle="tab">История</a></li>
+							<li role="presentation"><a href="#pride" aria-controls="pride" role="tab" data-toggle="tab">Гордость</a></li>
+						</ul>
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane fade in active" id="mission"></br>
+								<div class="row">
+									<div class="col-md-4">
+										<img alt="alt" class="img-responsive" style="width: 100%;" src="images/1-1.jpg">
+										<hr class="blue-line">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat…
+										</p>
+									</div>
+									<div class="col-md-4">
+										<img alt="alt" class="img-responsive" style="width: 100%;" src="images/1-2.jpg">
+										<hr class="blue-line">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat…
+										</p>
+									</div>
+									<div class="col-md-4">
+										<img alt="alt" class="img-responsive" style="width: 100%;" src="images/1-3.jpg">
+										<hr class="blue-line">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat…
+										</p>
+									</div>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane fade " id="history">
+								<h3>История заголовок</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae mi facilisis leo bibendum consectetur eget et velit. Nunc quis ornare ligula. Mauris at porttitor lacus. Phasellus vestibulum molestie urna non euismod. In scelerisque at erat non molestie. Quisque et dolor id mauris sollicitudin ornare. Duis scelerisque justo ac dui volutpat pretium. Aliquam maximus tempus sem, vitae commodo ipsum dignissim quis.</p>
+								<p>In aliquam nulla non elementum sodales. Aliquam molestie lorem in pretium facilisis. In velit velit, tristique eu sapien et, mollis scelerisque eros. Nunc sed egestas quam. Aliquam tincidunt turpis eget mauris pretium cursus. Proin ac massa ligula. Aliquam et ante volutpat, venenatis metus non, viverra ante.</p>
+								<p>Donec viverra, ipsum eget iaculis vulputate, orci justo vehicula ipsum, eget finibus urna turpis non ex. Morbi nulla ipsum, sodales et egestas quis, placerat a magna. In ut erat mauris. Proin porttitor enim sed porta bibendum. Sed eu mollis quam, at viverra diam. Sed dapibus lacus sed eros suscipit, ut ultrices orci tristique. Nam nisl velit, ornare quis sagittis at, imperdiet et arcu. Pellentesque volutpat dolor eu tellus elementum fringilla. Nunc euismod tortor vitae eros sagittis, et volutpat elit luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper aliquet lectus, nec interdum tellus commodo quis. Aenean pretium velit sit amet risus finibus convallis in ut sem. Sed euismod hendrerit ornare. Integer blandit ligula a quam iaculis finibus. Pellentesque efficitur dolor ac velit euismod ultricies.</p>
+							</div>
+							<div role="tabpanel" class="tab-pane fade " id="pride">
+								<h3>Гордость заголовок</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae mi facilisis leo bibendum consectetur eget et velit. Nunc quis ornare ligula. Mauris at porttitor lacus. Phasellus vestibulum molestie urna non euismod. In scelerisque at erat non molestie. Quisque et dolor id mauris sollicitudin ornare. Duis scelerisque justo ac dui volutpat pretium. Aliquam maximus tempus sem, vitae commodo ipsum dignissim quis.</p>
+								<p>In aliquam nulla non elementum sodales. Aliquam molestie lorem in pretium facilisis. In velit velit, tristique eu sapien et, mollis scelerisque eros. Nunc sed egestas quam. Aliquam tincidunt turpis eget mauris pretium cursus. Proin ac massa ligula. Aliquam et ante volutpat, venenatis metus non, viverra ante.</p>
+								<p>Donec viverra, ipsum eget iaculis vulputate, orci justo vehicula ipsum, eget finibus urna turpis non ex. Morbi nulla ipsum, sodales et egestas quis, placerat a magna. In ut erat mauris. Proin porttitor enim sed porta bibendum. Sed eu mollis quam, at viverra diam. Sed dapibus lacus sed eros suscipit, ut ultrices orci tristique. Nam nisl velit, ornare quis sagittis at, imperdiet et arcu. Pellentesque volutpat dolor eu tellus elementum fringilla. Nunc euismod tortor vitae eros sagittis, et volutpat elit luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper aliquet lectus, nec interdum tellus commodo quis. Aenean pretium velit sit amet risus finibus convallis in ut sem. Sed euismod hendrerit ornare. Integer blandit ligula a quam iaculis finibus. Pellentesque efficitur dolor ac velit euismod ultricies.</p>
+							</div>
+						</div>
+					</div>
+				</div><br/><br/>
+				<!-- ... мы лучшие -->
+			</div>
+		</section>
+		<section id="whoweare" class="scrollto">
+			<div class="grey">
+				<!-- издания -->
+				<div class="container">
+					<h2 class="text-center">Издания</h2>
+					<div class="row">
+						<div class="col-md-1 hidden-xs"></div>
+						<div class="col-md-10 col-xs-12">
+							<div id="gallery1" style="display:none;">
+								<img alt="izd-kp"
+									 src="images/logo/kp_logo.png"
+									 data-image="images/logo/kp_logo.png"
+									 data-description="This is a Lemon Slice"
+									 style="display:none">
+								<img alt="izd-korrespondent"
+									 src="images/logo/korrespondent.png"
+									 data-image="images/logo/korrespondent.png"
+									 data-description="Those are peppers"
+									 style="display:none">
+								<img alt="izd-tv"
+									 src="images/logo/tv.png"
+									 data-image="images/logo/tv.png"
+									 data-description="Those are keys"
+									 style="display:none">
+								<img alt="izd-uzr"
+	 									 src="images/logo/logo_uzr_red.png"
+	 									 data-image="images/logo/logo_uzr_red.png"
+	 									 data-description="This is iphone back"
+	 									 style="display:none">
+								<img alt="izd-football"
+									 src="images/logo/football.png"
+									 data-image="images/logo/football.png"
+									 data-description="Those are friuts in a cup"
+									 style="display:none">
+								<img alt="izd-aif"
+									 src="images/logo/aif_logo.png"
+									 data-image="images/logo/aif_logo.png"
+									 data-description="Those are yellow flowers"
+									 style="display:none">
+								<img alt="izd-eg"
+									 src="images/logo/eg.png"
+									 data-image="images/logo/eg.png"
+									 data-description="This is butterfly"
+									 style="display:none">
+								<img alt="izd-sovsekr"
+									 src="images/logo/sovsekr.png"
+									 data-image="images/logo/sovsekr.png"
+									 data-description="This is a woman"
+									 style="display:none">
+								<img alt="izd-money"
+									 src="images/logo/money_logo2.png"
+									 data-image="images/logo/money_logo2.png"
+									 data-description="This is cup of coffee"
+									 style="display:none">
+
+							</div>
+						</div>
+						<div class="col-md-1 hidden-xs text-right"></div>
+					</div>
+				</div>
+				<!-- .... издания -->
+			</div>
+
+		<!-- интернет -->
+		<div class="container">
+			<h2 class="text-center">Интернет</h2><br/>
+			<div class="row">
+				<div class="col-md-3">
+					<a href="#" data-toggle="modal" data-target="#temp-window"><img alt="alt" class="center-block" src="images/logo-internet/bigmir_logo.png" /></a>
+					<a href="http://bigmir.net" target="_blank"><p class="link-int">bigmir.net</p></a>
+					<p class="content-int">Интернет – главный приоритет для UMH. Сейчас группа является игроком №1 в Украине по аудитории и рекламным доходам. </p>
+
+					<a href="#" data-toggle="modal" data-target="#izd-uzr"><img alt="alt" class="center-block" src="images/logo-internet/logo_uzr_272x90_red.png" /></a>
+					<a href="http://uzr.com.ua" target="_blank"><p class="link-int">uzr.com.ua</p></a>
+					<p class="content-int">«У журнала есть собственный сайт uzr.com.ua, на котором мы рады предложить вам еще больше фото- и видеоматериалов. </p>
+
+					<a href="#" data-toggle="modal" data-target="#izd-aif"><img alt="alt" class="center-block" src="images/logo/logo_aif.svg" style="width: 161px;"/></a>
+					<a href="http://aif.ua" target="_blank"><p class="link-int">aif.ua</p></a>
+					<p class="content-int">Вся информация из еженедельника, а также прямые линии, онлайн трансляции со знаменитостями и ежедневная лента новостей Украины и мира доступна нашим читателям также на сайте aif.ua.
+</p>
+
+					<a href="#" data-toggle="modal" data-target="#temp-window"><img alt="alt" style="width: 130px;" class="center-block" src="images/logo-internet/tvua.png" /></a>
+					<a href="http://tv.ua" target="_blank"><p class="link-int">tv.ua</p></a>
+					<p class="content-int">UMH планирует активное развитие интернет-направления на российском рынке и в странах СНГ.</p>
+
+					<a href="#" data-toggle="modal" data-target="#temp-window"><img alt="alt" class="center-block" src="images/logo-internet/kpua.png" /></a>
+					<a href="http://kp.ua" target="_blank"><p class="link-int">kp.ua</p></a>
+					<p class="content-int">Портфель веб-проектов UMH насчитывает порядка 20 популярных ресурсов, в числе которых лидирующие проекты: korrespondent.net, bigmir.net, i.ua, football.ua.</p>
+
+				</div>
+				<div class="col-md-3">
+
+					<a href="#" data-toggle="modal" data-target="#temp-window"><img alt="alt" class="center-block" src="images/logo-internet/logo_iua.png" /></a>
+					<a href="http://i.ua" target="_blank"><p class="link-int">i.ua</p></a>
+					<p class="content-int">Благодаря качественному развитию проектов, UMH удерживает лидерство в сегментах: порталы, спорт, новости и lifestyle.</p>
+
+					<a href="#" data-toggle="modal" data-target="#temp-window">
+						<img src="images/logo/kolobok-logo-ua.svg" class="center-block" style="width: 85px;" alt="журнал колобок">
+					</a>
+					<a href="http://kolobok.ua" target="_blank"><p class="link-int">kolobok.ua</p></a>
+					<p class="content-int">UMH group совместно с Digital Ventures создали компанию Digi Media, крупнейший сейлз-хаус в украинском интернете, объединяющий продажи на ведущих интернет-площадках страны.</p>
+
+					<a href="#" data-toggle="modal" data-target="#temp-window"><img alt="alt" class="center-block" src="images/logo-internet/logo_vg.png" /></a>
+					<a href="http://vgorode.ua" target="_blank"><p class="link-int">vgorode.ua</p></a>
+					<p class="content-int">По принципу «единого окна» Digi Media обладает эксклюзивными правами на продажу рекламы на сайтах, в сумме генерирующих более 400 млн. просмотров страниц в месяц.</p>
+
+					<a href="#" data-toggle="modal" data-target="#temp-window"><img alt="alt" class="center-block" src="images/logo-internet/gloss2.png" /></a>
+					<a href="http://gloss.ua" target="_blank"><p class="link-int">gloss.ua</p></a>
+					<p class="content-int">Уникальность сейлз-хауса состоит в одновременно большом охвате аудитории, покрытии на лидирующих контент-площадках и возможности таргетинга на различные аудитории для рекламодателей.</p>
+
+					<a href="#" data-toggle="modal" data-target="#temp-window"><img alt="alt" class="center-block" src="images/logo-internet/money_logo2.png" style="width: 170px;" /></a>
+					<a href="http://dengi.ua" target="_blank"><p class="link-int">dengi.ua</p></a>
+					<p class="content-int">Интернет – главный приоритет для UMH. Сейчас группа является игроком №1 в Украине по аудитории и рекламным доходам. </p>
+				</div>
+				<div class="col-md-3">
+					<a href="#" data-toggle="modal" data-target="#temp-window"><img alt="alt" class="center-block" src="images/logo-internet/logo_smak.png" style="width: 185px;" /></a>
+					<a href="http://smak.ua" target="_blank"><p class="link-int">smak.ua</p></a>
+					<p class="content-int">На сегодняшний день ресурсы UMH покрывают порядка 50% украинской интернет-пользователей, а доля группы на рынке интернет-рекламы – 29%. </p>
+
+					<a href="#" data-toggle="modal" data-target="#int-fdmd"><img alt="alt" class="center-block" src="images/logo-internet/fdmd.png" style="width: 130px;"/></a>
+					<a href="http://foodandmood.com.ua" target="_blank"><p class="link-int">foodandmood.com.ua</p></a>
+					<p class="content-int">Наша аудитория - средний класс, который хочет питаться вкусной и здоровой пищей, а также узнавать о новых тенденциях, читать кулинарные лайфхаки и советы от звезд.</p>
+
+					<a href="#" data-toggle="modal" data-target="#temp-window"><img alt="alt" class="center-block" src="images/logo-internet/logo_isport.png" /></a>
+					<a href="http://isport.ua" target="_blank"><p class="link-int">isport.ua</p></a>
+					<p class="content-int">Несмотря на пока сравнительно небольшую долю интернета на рекламном рынке, он является самым перспективным медиа с предполагаемой среднегодовой динамикой рекламных доходов более 40%.</p>
+
+					<a href="#" data-toggle="modal" data-target="#temp-window"><img alt="alt" class="center-block" src="images/logo-internet/sailor_logo.png" style="width: 125px;"/></a>
+					<a href="http://mport.ua" target="_blank"><p class="link-int">mport.ua</p></a>
+					<p class="content-int">UMH планирует активное развитие интернет-направления на российском рынке и в странах СНГ.</p>
+
+					<a href="#" data-toggle="modal" data-target="#int-tocka"><img alt="alt" class="center-block" src="images/logo-internet/tochka.png" /></a>
+					<a href="http://tochka.net" target="
+					"><p class="link-int">tochka.net</p></a>
+					<p class="content-int">tochka.net – женский онлайн-ресурс о моде, красоте, шоу-бизнесе, отношениях и стиле жизни. Сегодня tochka.net – крупнейший женский онлайн-ресурс в Украине.</p>
+				</div>
+				<div class="col-md-3">
+					<a href="#" data-toggle="modal" data-target="#temp-window"><img alt="alt" class="center-block" src="images/logo-internet/archidea.png" style="width: 180px;" /></a>
+					<a href="http://archidea.com.ua" target="_blank"><p class="link-int">archidea.com.ua</p></a>
+					<p class="content-int">Благодаря качественному развитию проектов, UMH удерживает лидерство в сегментах: порталы, спорт, новости и lifestyle.</p>
+					<a href="#" data-toggle="modal" data-target="#temp-window"><img alt="alt" class="center-block" src="images/logo-internet/korrespondentnet.png" /></a>
+					<a href="http://korrespondent.net" target="_blank"><p class="link-int">korrespondent.net</p></a>
+					<p class="content-int">UMH group совместно с Digital Ventures создали компанию Digi Media, крупнейший сейлз-хаус в украинском интернете, объединяющий продажи на ведущих интернет-площадках страны.</p>
+					<a href="#" data-toggle="modal" data-target="#temp-window"><img alt="alt" class="center-block" src="images/logo-internet/footballua.png" /></a>
+					<a href="http://football.ua" target="_blank"><p class="link-int">football.ua</p></a>
+					<p class="content-int">По принципу «единого окна» Digi Media обладает эксклюзивными правами на продажу рекламы на сайтах, в сумме генерирующих более 400 млн. просмотров страниц в месяц.</p>
+					<a href="#" data-toggle="modal" data-target="#temp-window"><img alt="alt" class="center-block" src="images/logo-internet/ivona.png" style="width: 125px;" /></a>
+					<a href="http://ivona.bigmir.net" target="_blank"><p class="link-int">ivona.bigmir.net</p></a>
+					<p class="content-int">Уникальность сейлз-хауса состоит в одновременно большом охвате аудитории, покрытии на лидирующих контент-площадках и возможности таргетинга на различные аудитории для рекламодателей.</p>
+				</div>
+			</div>
+			<br/><br/>
+		</div>
+		<!-- ... интернет -->
+		<div class="grey">
+			<!-- радио -->
+			<div class="container">
+				<h2 class="text-center">Радио</h2>
+				<div class="row">
+					<div class="col-md-1 hidden-xs"></div>
+					<div class="col-md-10 col-xs-12">
+						<div id="gallery2" style="display:none;">
+							<img alt="temp-window"
+								 src="images/logo-radio/auto.png"
+								 data-image="images/logo-radio/auto.png"
+								 data-description="This is a Lemon Slice"
+								 style="display:none">
+							<img alt="temp-window"
+								 src="images/logo-radio/gs.png"
+								 data-image="images/logo-radio/gs.png"
+								 data-description="Those are peppers"
+								 style="display:none">
+							<img alt="temp-window"
+								 src="images/logo-radio/jam.png"
+								 data-image="images/logo-radio/jam.png"
+								 data-description="Those are keys"
+								 style="display:none">
+							<img alt="temp-window"
+								 src="images/logo-radio/ep.png"
+								 data-image="images/logo-radio/ep.png"
+								 data-description="Those are friuts in a cup"
+								 style="display:none">
+							<img alt="temp-window"
+								 src="images/logo-radio/lounge.png"
+								 data-image="images/logo-radio/lounge.png"
+								 data-description="Those are yellow flowers"
+								 style="display:none">
+							<img alt="temp-window"
+								 src="images/logo-radio/nrg.png"
+								 data-image="images/logo-radio/nrg.png"
+								 data-description="This is butterfly"
+								 style="display:none">
+							<img alt="temp-window"
+								 src="images/logo-radio/retro.png"
+								 data-image="images/logo-radio/retro.png"
+								 data-description="This is a boat"
+								 style="display:none">
+						</div>
+					</div>
+					<div class="col-md-1 hidden-xs text-right"></div>
+				</div>
+			</div>
+			<!-- .... радио -->
+		</div>
+		</section>
+
+
+		<!-- Полиграфия -->
+		<section id="polygraphia" style="box-shadow: 1px 4px 1px #e5e5e5;">
+			<div class="container">
+				<h2 class="text-center">Полиграфия</h2>
+				<!-- Возможности, Портфолио, Контакты -->
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#opportunities" aria-controls="opportunities" role="tab" data-toggle="tab">Возможности</a></li>
+					<li role="presentation"><a href="#poly-folio" aria-controls="poly-folio" role="tab" data-toggle="tab">Портфолио</a></li>
+					<li role="presentation"><a href="#poly-contacts" aria-controls="poly-contacts" role="tab" data-toggle="tab">Контакты</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane fade in active" id="opportunities"><br>
+						<div class="row">
+							<div class="col-md-3">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae mi facilisis leo bibendum consectetur eget et velit. Nunc quis ornare ligula. Mauris at porttitor lacus. Phasellus vestibulum molestie urna non euismod. In scelerisque at erat non molestie. Quisque et dolor id mauris sollicitudin ornare. Duis scelerisque justo ac dui volutpat pretium. Aliquam maximus tempus sem.</p>
+								<p>In aliquam nulla non elementum sodales. Aliquam molestie lorem in pretium facilisis. In velit velit, tristique eu sapien et, mollis scelerisque eros. Nunc sed egestas quam. Aliquam tincidunt turpis eget mauris pretium cursus. Proin ac massa ligula. Aliquam et ante volutpat, venenatis metus non, viverra ante.</p>
+							</div>
+							<div class="col-md-6">
+								<img class="fullwidth" src="images/poligraphia.jpg">
+							</div>
+							<div class="col-md-3">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae mi facilisis leo bibendum consectetur eget et velit. Nunc quis ornare ligula. Mauris at porttitor lacus. Phasellus vestibulum molestie urna non euismod. In scelerisque at erat non molestie. Quisque et dolor id mauris sollicitudin ornare. Duis scelerisque justo ac dui volutpat pretium. Aliquam maximus tempus sem.</p>
+								<p>In aliquam nulla non elementum sodales. Aliquam molestie lorem in pretium facilisis. In velit velit, tristique eu sapien et, mollis scelerisque eros. Nunc sed egestas quam. Aliquam tincidunt turpis eget mauris pretium cursus. Proin ac massa ligula. Aliquam et ante volutpat, venenatis metus non, viverra ante.</p>
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="poly-folio">
+						<h3>Портфолио</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae mi facilisis leo bibendum consectetur eget et velit. Nunc quis ornare ligula. Mauris at porttitor lacus. Phasellus vestibulum molestie urna non euismod. In scelerisque at erat non molestie. Quisque et dolor id mauris sollicitudin ornare. Duis scelerisque justo ac dui volutpat pretium. Aliquam maximus tempus sem, vitae commodo ipsum dignissim quis.</p>
+						<p>In aliquam nulla non elementum sodales. Aliquam molestie lorem in pretium facilisis. In velit velit, tristique eu sapien et, mollis scelerisque eros. Nunc sed egestas quam. Aliquam tincidunt turpis eget mauris pretium cursus. Proin ac massa ligula. Aliquam et ante volutpat, venenatis metus non, viverra ante.</p>
+						<p>Donec viverra, ipsum eget iaculis vulputate, orci justo vehicula ipsum, eget finibus urna turpis non ex. Morbi nulla ipsum, sodales et egestas quis, placerat a magna. In ut erat mauris. Proin porttitor enim sed porta bibendum. Sed eu mollis quam, at viverra diam. Sed dapibus lacus sed eros suscipit, ut ultrices orci tristique. Nam nisl velit, ornare quis sagittis at, imperdiet et arcu. Pellentesque volutpat dolor eu tellus elementum fringilla. Nunc euismod tortor vitae eros sagittis, et volutpat elit luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper aliquet lectus, nec interdum tellus commodo quis. Aenean pretium velit sit amet risus finibus convallis in ut sem. Sed euismod hendrerit ornare. Integer blandit ligula a quam iaculis finibus. Pellentesque efficitur dolor ac velit euismod ultricies.</p>
+					</div>
+					<div role="tabpanel" class="tab-pane fade " id="poly-contacts">
+						<h3>Контакты</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae mi facilisis leo bibendum consectetur eget et velit. Nunc quis ornare ligula. Mauris at porttitor lacus. Phasellus vestibulum molestie urna non euismod. In scelerisque at erat non molestie. Quisque et dolor id mauris sollicitudin ornare. Duis scelerisque justo ac dui volutpat pretium. Aliquam maximus tempus sem, vitae commodo ipsum dignissim quis.</p>
+						<p>In aliquam nulla non elementum sodales. Aliquam molestie lorem in pretium facilisis. In velit velit, tristique eu sapien et, mollis scelerisque eros. Nunc sed egestas quam. Aliquam tincidunt turpis eget mauris pretium cursus. Proin ac massa ligula. Aliquam et ante volutpat, venenatis metus non, viverra ante.</p>
+						<p>Donec viverra, ipsum eget iaculis vulputate, orci justo vehicula ipsum, eget finibus urna turpis non ex. Morbi nulla ipsum, sodales et egestas quis, placerat a magna. In ut erat mauris. Proin porttitor enim sed porta bibendum. Sed eu mollis quam, at viverra diam. Sed dapibus lacus sed eros suscipit, ut ultrices orci tristique. Nam nisl velit, ornare quis sagittis at, imperdiet et arcu. Pellentesque volutpat dolor eu tellus elementum fringilla. Nunc euismod tortor vitae eros sagittis, et volutpat elit luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper aliquet lectus, nec interdum tellus commodo quis. Aenean pretium velit sit amet risus finibus convallis in ut sem. Sed euismod hendrerit ornare. Integer blandit ligula a quam iaculis finibus. Pellentesque efficitur dolor ac velit euismod ultricies.</p>
+					</div>
+				</div>
+			</div><br/><br/>
+		</section>
+		<!-- //////// Полиграфия -->
+
+		<!-- Пресс-центр -->
+		<section id="press-center" style="box-shadow: 1px 4px 1px #e5e5e5;">
+			<div class="container">
+				<h2 class="text-center">Пресс-центр</h2>
+				<div class="row">
+				  <div class="col-md-3">
+				    <div class="thumbnail">
+				      <img src="images/gears2.jpg" style="width: 100%;" class="img-responsive" alt="...">
+				      <div class="caption">
+				        <h3>Футбольные фанаты Украины получили ультрамодный подарок от FOOTBALL.UA</h3>
+				        <p>FOOTBALL.UA совместно с SAMSUNG объединили усилия для завоевания украинской аудитории и реализовали специальный проект - в часах Самсунг Gear S2 теперь стоит специальное приложение сайта FOOTBALL.UA.</p>
+								<p>Счастливые владельцы часов SAMSUNG Gear S2 получили ...</p>
+				        <p><button type="button" class="btn btn-default">Подробнее</button></p>
+				      </div>
+				    </div>
+				  </div>
+					<div class="col-md-3">
+				    <div class="thumbnail">
+				      <img src="images/presscenter/s3.jpg" style="width: 100%;" class="img-responsive" alt="...">
+				      <div class="caption">
+				        <h3>Лада Лузина открыла рубрику под названием "Украина. В поисках чудес".</h3>
+				        <p>В журнале «Теленеделя» и на сайте TV.UA писательница открыла новую рубрику.</p>
+								<p>Теперь дважды в месяц читатели вместе со знаменитой «киевской ведьмой» смогут виртуально путешествовать по городам и весям нашей необыкновенно красивой и загадочной страны, узнавать секреты...</p>
+				        <p><button type="button" class="btn btn-default">Подробнее</button></p>
+				      </div>
+				    </div>
+				  </div>
+					<div class="col-md-3">
+				    <div class="thumbnail">
+				      <img src="images/presscenter/s2.jpg" style="width: 100%;" class="img-responsive" alt="...">
+				      <div class="caption">
+				        <h3>Интервью руководителя ансамбля Вирского на kp.ua</h3>
+								<p>Худрук ансамбля танца им. Вирского Мирослав Вантух: Талантливых, но некрасивых не беру!</p>
+								<p>Бессменный руководитель самого знаменитого танцевального коллектива страны рассказал о правилах приема в ансамбль, общении с мировыми политиками, успехе украинских красавиц за границей и многом другом.</p>
+				        <p><button type="button" class="btn btn-default">Подробнее</button></p>
+				      </div>
+				    </div>
+				  </div>
+					<div class="col-md-3">
+				    <div class="thumbnail">
+				      <img src="images/presscenter/s4.jpg" style="width: 100%;" class="img-responsive"alt="...">
+				      <div class="caption">
+				        <h3>Журнал «Футбол» - лучший спортивный журнал 2016 года в Украине</h3>
+				        <p>Журнал «Футбол», авторитетное издание о футболе с 20-летней историей, входящий в семейство изданий «Украинского медиа холдинга», получил высокое звание «Лучший журнал года» по версии Ассоциации спортивных журналистов Украины.</p>
+								<p>Ассоциация спортивных журналистов Украины (АСЖУ) подвела спортивные ...</p>
+				        <p><button type="button" class="btn btn-default">Подробнее</button></p>
+				      </div>
+				    </div>
+				  </div>
+				</div></br>
+				<p class="text-center"><a style="margin-right: 30px;"href="#">БОЛЬШЕ НОВОСТЕЙ...</a> <a href="#">АРХИВ</a></p>
+				<br/><br/>
+			</div>
+		</section>
+		<!-- /// Пресс-центр -->
+
+
+
+
+
+		<section id="b2b">
+			<!-- сотрудничество -->
+			<div class="container">
+				<h2 class="text-center">Сотрудничество</h2>
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#adv" aria-controls="adv" role="tab" data-toggle="tab">Рекламодателям</a></li>
+					<li role="presentation"><a href="#folio" aria-controls="folio" role="tab" data-toggle="tab">Портфолио</a></li>
+					<li role="presentation"><a href="#clients" aria-controls="clients" role="tab" data-toggle="tab">Клиенты и партнеры</a></li>
+					<li role="presentation"><a href="#coop-poly" aria-controls="coop-poly" role="tab" data-toggle="tab">Полиграфия</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane fade in active" id="adv"></br>
+						<div class="row">
+							<div class="col-md-4">
+								<a href="#"><img alt="alt" class="img-responsive" style="width: 100%;" src="images/2-1.jpg"></a>
+								<a href="#"><p class="partners">Интернет</p></a>
+								<hr class="blue-line mt-0">
+							</div>
+							<div class="col-md-4">
+								<a href="#"><img alt="alt" class="img-responsive" style="width: 100%;" src="images/2-2.jpg"></a>
+								<a href="#"><p class="partners">Печать</p></a>
+								<hr class="blue-line mt-0">
+							</div>
+							<div class="col-md-4">
+								<a href="#"><img alt="alt" class="img-responsive" style="width: 100%;"src="images/2-3.jpg"></a>
+								<a href="#"><p class="partners">Радио</p></a>
+								<hr class="blue-line mt-0">
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="folio">
+						<h3>Портфолио</h3>
+						<div class="row">
+							<div class="col-md-12">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae mi facilisis leo bibendum consectetur eget et velit. Nunc quis ornare ligula. Mauris at porttitor lacus. Phasellus vestibulum molestie urna non euismod. In scelerisque at erat non molestie. Quisque et dolor id mauris sollicitudin ornare. Duis scelerisque justo ac dui volutpat pretium. Aliquam maximus tempus sem, vitae commodo ipsum dignissim quis.</p>
+								<p>In aliquam nulla non elementum sodales. Aliquam molestie lorem in pretium facilisis. In velit velit, tristique eu sapien et, mollis scelerisque eros. Nunc sed egestas quam. Aliquam tincidunt turpis eget mauris pretium cursus. Proin ac massa ligula. Aliquam et ante volutpat, venenatis metus non, viverra ante.</p>
+								<p>Donec viverra, ipsum eget iaculis vulputate, orci justo vehicula ipsum, eget finibus urna turpis non ex. Morbi nulla ipsum, sodales et egestas quis, placerat a magna. In ut erat mauris. Proin porttitor enim sed porta bibendum. Sed eu mollis quam, at viverra diam. Sed dapibus lacus sed eros suscipit, ut ultrices orci tristique. Nam nisl velit, ornare quis sagittis at, imperdiet et arcu. Pellentesque volutpat dolor eu tellus elementum fringilla. Nunc euismod tortor vitae eros sagittis, et volutpat elit luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper aliquet lectus, nec interdum tellus commodo quis. Aenean pretium velit sit amet risus finibus convallis in ut sem. Sed euismod hendrerit ornare. Integer blandit ligula a quam iaculis finibus. Pellentesque efficitur dolor ac velit euismod ultricies.</p>
+							</div>
+						</div>
+					</div>
+
+					<div role="tabpanel" class="tab-pane fade " id="clients">
+						<h3>Клиенты и партнеры</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae mi facilisis leo bibendum consectetur eget et velit. Nunc quis ornare ligula. Mauris at porttitor lacus. Phasellus vestibulum molestie urna non euismod. In scelerisque at erat non molestie. Quisque et dolor id mauris sollicitudin ornare. Duis scelerisque justo ac dui volutpat pretium. Aliquam maximus tempus sem, vitae commodo ipsum dignissim quis.</p>
+						<p>In aliquam nulla non elementum sodales. Aliquam molestie lorem in pretium facilisis. In velit velit, tristique eu sapien et, mollis scelerisque eros. Nunc sed egestas quam. Aliquam tincidunt turpis eget mauris pretium cursus. Proin ac massa ligula. Aliquam et ante volutpat, venenatis metus non, viverra ante.</p>
+						<p>Donec viverra, ipsum eget iaculis vulputate, orci justo vehicula ipsum, eget finibus urna turpis non ex. Morbi nulla ipsum, sodales et egestas quis, placerat a magna. In ut erat mauris. Proin porttitor enim sed porta bibendum. Sed eu mollis quam, at viverra diam. Sed dapibus lacus sed eros suscipit, ut ultrices orci tristique. Nam nisl velit, ornare quis sagittis at, imperdiet et arcu. Pellentesque volutpat dolor eu tellus elementum fringilla. Nunc euismod tortor vitae eros sagittis, et volutpat elit luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper aliquet lectus, nec interdum tellus commodo quis. Aenean pretium velit sit amet risus finibus convallis in ut sem. Sed euismod hendrerit ornare. Integer blandit ligula a quam iaculis finibus. Pellentesque efficitur dolor ac velit euismod ultricies.</p>
+					</div>
+					<div role="tabpanel" class="tab-pane fade " id="coop-poly">
+						<h3>Полиграфия</h3>
+						<div class="row">
+							<div class="col-md-12">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae mi facilisis leo bibendum consectetur eget et velit. Nunc quis ornare ligula. Mauris at porttitor lacus. Phasellus vestibulum molestie urna non euismod. In scelerisque at erat non molestie. Quisque et dolor id mauris sollicitudin ornare. Duis scelerisque justo ac dui volutpat pretium. Aliquam maximus tempus sem, vitae commodo ipsum dignissim quis.</p>
+								<p>In aliquam nulla non elementum sodales. Aliquam molestie lorem in pretium facilisis. In velit velit, tristique eu sapien et, mollis scelerisque eros. Nunc sed egestas quam. Aliquam tincidunt turpis eget mauris pretium cursus. Proin ac massa ligula. Aliquam et ante volutpat, venenatis metus non, viverra ante.</p>
+							</div>
+						</div>
+						<br/>
+					</div>
+				</div>
+				<br/><br/>
+			</div>
+		</section>
+		<section id="team" style="min-height: 300px;">
+			<div class="container">
+				<h2 class="text-center">Спецпроекты</h2>
+							<div id="gallery-team-all" style="display:none;">
+								<a href="http://2016review.football.ua">
+									<img alt=""
+									 src="images/proj/2.jpg"
+									 data-image="images/peoples/1.jpg"
+									 data-description=""
+									 style="display:none">
+								</a>
+								<a href="http://top11carling.football.ua">
+									<img alt=""
+									 src="images/proj/1.jpg"
+									 data-image="images/peoples/1.jpg"
+									 data-description=""
+									 style="display:none">
+								</a>
+								<a href="http://2016.football.ua">
+									<img alt=""
+									 src="images/proj/3.jpg"
+									 data-image="images/peoples/1.jpg"
+									 data-description=""
+									 style="display:none">
+								</a>
+								<a href="https://cats-health.tochka.net">
+									<img alt=""
+									 src="images/proj/4.jpg"
+									 data-image="images/peoples/1.jpg"
+									 data-description=""
+									 style="display:none">
+								</a>
+								<a href="https://www.catchow.ua">
+									<img alt=""
+									 src="images/proj/5.jpg"
+									 data-image="images/peoples/1.jpg"
+									 data-description=""
+									 style="display:none">
+								</a>
+								<a href="http://dynamo90.football.ua">
+									<img alt=""
+									 src="images/proj/6.jpg"
+									 data-image="images/peoples/1.jpg"
+									 data-description=""
+									 style="display:none">
+								</a>
+								<a href="http://irishtrue.vgorode.ua">
+									<img alt=""
+									 src="images/proj/7.jpg"
+									 data-image="images/peoples/1.jpg"
+									 data-description=""
+									 style="display:none">
+								</a>
+								<a href="http://independence.korrespondent.net">
+									<img alt=""
+									 src="images/proj/8.jpg"
+									 data-image="images/peoples/1.jpg"
+									 data-description=""
+									 style="display:none">
+								</a>
+								<a href="http://skodakodiaq.korrespondent.net">
+									<img alt=""
+									 src="images/proj/9.jpg"
+									 data-image="images/peoples/1.jpg"
+									 data-description=""
+									 style="display:none">
+								</a>
+								<a href="http://eurovision.korrespondent.net">
+									<img alt=""
+									 src="images/proj/10.jpg"
+									 data-image="images/peoples/1.jpg"
+									 data-description=""
+									 style="display:none">
+								</a>
+							</div>
+			</div>
+		</section>
+
+		<section id="career">
+			<div class="container">
+				<h2 class="text-center">Карьера</h2>
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Вакансии</a></li>
+					<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Конкурсы</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="home"><br/>
+						<div class="row">
+							<div class="col-sm-4 col-xs-12">
+							  <div class="form-group">
+							    <select class="selectpicker form-control" multiple title="Выберите отрасль...">
+							      <option>IT</option>
+							      <option>Интернет</option>
+										<option>Радиогруппа</option>
+							      <option>Типография</option>
+										<option>Управление</option>
+										<option>Другие</option>
+							    </select>
+							  </div>
+							</div>
+							<div class="col-sm-4 col-xs-12">
+							  <div class="form-group">
+							    <select class="selectpicker form-control" multiple title="Выберитеь регион...">
+							      <option>Киев</option>
+							      <option>Харьков</option>
+							      <option>Одесса</option>
+										<option>Запорожье</option>
+							    </select>
+							  </div>
+							</div>
+							<div class="col-sm-4 col-xs-12s">
+							  <div class="form-group">
+									<button type="button" class="btn btn-default btn-block">Показать вакансии</button>
+							  </div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p><a href="#">МЕНЕДЖЕР ПО ПРОДАЖЕ РЕКЛАМЫ</a></p>
+								<p><a href="#">ДИЗАЙНЕР-ВЕРСТАЛЬЩИК ВЭБ-САЙТОВ</a></p>
+								<p><a href="#">МЕНЕДЖЕР ПО РАБОТЕ С ПОСТАВЩИКАМИ</a></p>
+								<p><a href="#">КЛАДОВЩИК</a></p>
+								<p><a href="#">РЕДАКТОР РУБРИКИ "ТЕХНО"</a></p>
+							</div>
+							<div class="col-md-3">
+								<p><a href="#">ВЕБ-ДИЗАЙНЕР, ВЕРСТАЛЬЩИК СПЕЦИАЛЬНЫХ ПРОЕКТОВ</a></p>
+								<p><a href="#">РЕДАКТОР ЛЕНТЫ НОВОСТЕЙ</a></p>
+								<p><a href="#">МЕНЕДЖЕР ИНТЕРНЕТ-ПРОЕКТОВ</a></p>
+								<p><a href="#">ВИДЕОРЕДАКТОР</a></p>
+								<p><a href="#">ЮРИСТ</a></p>
+							</div>
+							<div class="col-md-3">
+								<p><a href="#">СММ- СПЕЦИАЛИСТ</a></p>
+								<p><a href="#">МОНТАЖЕР ВИДЕО</a></p>
+								<p><a href="#">БУХГАЛТЕР</a></p>
+								<p><a href="#">БУХГАЛТЕР НА УЧАСТОК ПОДПИСКИ</a></p>
+								<p><a href="#">КУРЬЕР</a></p>
+							</div>
+							<div class="col-md-3">
+								<p><a href="#">ПЕЧАТНИК ОФСЕТНОЙ ПЕЧАТИ</a></p>
+								<p><a href="#">ПОМОЩНИК ПЕЧАТНИКА ОФСЕТНОЙ ПЕЧАТИ</a></p>
+								<p><a href="#">МЕХАНИК (ДЕЖУРНЫЙ)</a></p>
+							</div>
+						</div>
+						<br>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="profile"><br/>
+						<div class="row">
+							<div class="col-md-3">
+								<p>
+									<a href="#">Конкурсное задание на вакансию главного редактора рубрики "Криминал"</a>
+								</p>
+							</div>
+							<div class="col-md-3">
+								<p>
+									<a href="#">Конкурсное задание на вакансию главного редактора рубрики "Финансы"</a>
+								</p>
+							</div>
+							<div class="col-md-3">
+								<p>
+									<a href="#">Конкурсное задание на вакансию корреспондента рубрики "Финансы"</a>
+								</p>
+							</div>
+							<div class="col-md-3">
+								<p>
+									<a href="#">Конкурсное задание на вакансию корреспондента женской рубрики "Ivona"</a>
+								</p>
+							</div>
+							<div class="col-md-3">
+								<p>
+									<a href="#">Конкурсное задание на вакансию корреспондента рубрики "Финансы"</a>
+								</p>
+							</div>
+							<div class="col-md-3">
+								<p>
+									<a href="#">Конкурсное задание на вакансию корреспондента женской рубрики "Ivona"</a>
+								</p>
+							</div>
+						</div>
+						<br/><br/>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<section id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">Форма обратной связи</div>
+					<div class="col-md-3">Контакты</div>
+					<div class="col-md-5"></div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-md-4">
+						<form>
+							<div class="form-group">
+								<input type="text" class="form-control blueinput" id="exampleInputEmail1" placeholder="Ваше имя">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control blueinput" id="exampleInputEmail1" placeholder="Ваш телефон">
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control blueinput" id="exampleInputPassword1" placeholder="Ваш Email">
+							</div>
+							<textarea placeholder="Ваше сообщение" class="form-control blueinput" rows="3"></textarea>
+							<div class="checkbox">
+								<label style="font-size: 11px; line-height: 20px;">
+									<input type="checkbox"> Разрешаю обработку персональных даных
+								</label>
+							</div>
+							<button type="submit" class="btn btn-default">Отправить</button>
+						</form>
+					</div>
+					<div class="col-md-3">
+						<address>
+							<strong>UMH, Inc.</strong><br>
+							04080  г. Киев, Украина<br>
+							ул. Кирилловская, 104<br>
+
+							<abbr title="Phone">тел:</abbr> +38 (044) 205-43-00<br>
+							<abbr title="Fax">факс:</abbr> +38 (044) 205-43-35
+						</address>
+						<address>
+							<strong>E-mail:</strong>
+							<a href="mailto:info@umh.com.ua">info@umh.com.ua</a>
+						</address><br><br>
+						<a href="https://www.facebook.com/umhgroup"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
+						<a href="https://www.facebook.com/umhgroup"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+					</div>
+					<div class="col-md-5">
+						<img src="images/one-color-map.png" class="mapimage">
+					</div>
+				</div>
+
+				<hr>
+				<div class="row">
+					<div class="col-md-12">
+						<p class="copyright">© 1994-2011 «УКРАИНСКИЙ МЕДИА ХОЛДИНГ»</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+	<!-- !!!!!!!!!!!!!!!!!!!! МОДАЛЬНЫЕ ОКНА !!!!!!!!!!!!!!!!!!!!!	 -->
+	<!-- Modal -->
+	<div class="modal fade" id="izd-kp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<img alt="alt" src="images/lightbox-icon-close-compact.png">
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-4">
+							<img src="images/logo/kp_logo.png">
+						</div>
+						<div class="col-md-8">
+							<p>Издаётся в формате A3 в чёрно-белом и цветном варианте. Тираж по состоянию на 2012 год: ежедневный выпуск — 132 000 экз., еженедельник — 235 000 экз. В 2004 году был запущен сайт газеты, который в 2009 году вошёл десятку самых посещаемых сайтов Украины в разделе «СМИ и Периодика». Печатная версия входит в пятёрку самых массовых ежедневных газет страны. За 9 месяцев 2007 года доля газеты на украинском рынке рекламы в прессе составила 1,5%.</p>
+							<p>Кроме Киева, «Комсомольская правда в Украине» выпускалась в Донецке, Львове, Харькове, Днепропетровске, Запорожье, Одессе и Крыму. 14 сентября 2012 года представительства в этих городах были закрыты, а выпуски прекращены, филиал на полуострове продолжал выпускать выпуски вплоть до присоединения Крыма с России в 2014 году.</p>
+							<p>12 января 2016 года в рамках закона о декоммунизации на Украине газета была переименована в «„КП“ в Украине», однако на сайте и в пресс-центре используется прежнее название.</p>
+						</div>
+					</div><hr>
+					<div class="row">
+						<div class="col-md-4 text-right">
+							<a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+						</div>
+						<div class="col-md-3">
+							<a href="#">http://kp.ua/</a>
+						</div>
+						<div class="col-md-5">
+							<p>Адрес редакции:</p>
+							<p>Украина, Киев, ул. Кирилловская, 104А, 6 эт</p>
+							<p>+38 (44) 205 43 01</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="izd-korrespondent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><img alt="alt" src="images/lightbox-icon-close-compact.png"></button>
+				</div>
+				<div class="modal-body">
+					I korrespondent
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="izd-tv" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><img alt="alt" src="images/lightbox-icon-close-compact.png"></button>
+				</div>
+				<div class="modal-body">
+					I tv
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="izd-uzr" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><img alt="alt" src="images/lightbox-icon-close-compact.png"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-4">
+							<img src="images/logo/logo-uzr-2017.jpg" class="fullwidth">
+						</div>
+						<div class="col-md-8">
+							<p>«Украина ЗА РУЛЕМ» – украинская версия культового автомобильного журнала, одного из старейших в мире. Первый номер вышел в 1928 году!</p>
+							<p>«Издаётся ежемесячно, на территории Украины с апреля 2005 г., и на данный момент является неоспоримым лидером среди автомобильных ежемесячников в нашей стране.</p>
+							<p>«Журнал предназначен как для начинающих, так и для опытных автолюбителей. Вашему вниманию – информация о важнейших новинках мирового автопрома. Тесты автомобилей, в том числе сравнительные. Экспертизы топлив, масел, расходных материалов, агрегатов, деталей и аксессуаров. Советы по грамотной эксплуатации.</p>
+							<p>«Мнение авторитетных авторов поможет принять правильное решение при выборе авто и его обслуживании. В журнале представлены самые последние разработки, научные внедрения и высокие технологии в автомобилестроении.</p>
+							<p>«У журнала есть собственный сайт uzr.com.ua, на котором мы рады предложить вам еще больше фото- и видеоматериалов. Наша страничка в Фейсбук – самая популярная из всех страниц автомобильных изданий в Украине. Присоединяйтесь!</p>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-md-4 text-right">
+							<a href="https://www.facebook.com/zarulemua" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+							<a href="https://www.instagram.com/uzr.com.ua/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+
+							<a href="https://www.youtube.com/channel/UCWmkYkk_rIaCVvlErpZi0fQ" target="_blank"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a>
+							<a href="https://plus.google.com/100714222024669042151" target="_blank"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
+							<a href="https://twitter.com/UaZarulem" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+						</div>
+						<div class="col-md-3">
+							<a href="http://uzr.com.ua/" target="_blank">uzr.com.ua</a>
+						</div>
+						<div class="col-md-5">
+							<p>Адрес редакции:</p>
+							<p>04073, Украина, Киев, пр. Куреневский, 17 литера Г</p>
+							<p>Тел.: +380 (044) 207-33-05<br/>207-97-00</p>
+							<p>Email: reklama@umh.com.ua</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="izd-football" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><img alt="alt" src="images/lightbox-icon-close-compact.png"></button>
+				</div>
+				<div class="modal-body">
+					I football
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="izd-aif" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog  modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><img alt="alt" src="images/lightbox-icon-close-compact.png"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-4">
+							<img src="images/logo/logo_aif.svg" class="fullwidth">
+						</div>
+						<div class="col-md-8">
+							<h3>«АРГУМЕНТЫ И ФАКТЫ» В УКРАИНЕ»</h3>
+							<p>Издание еженедельника «АиФ» началось в Украине в 1995 году НПП ООО «Монолог», которое владело на тот момент правами использования товарного знака «Аргументы и факты» на территории страны. В 2001 году владельцем «АиФ» в Украине» стал Украинский медиа холдинг.</p>
+							<p>С 2001 года появился спецпроект «АиФ» в Украине» - «АиФ Здоровье», «фишку» которого – точный прогноз магнитных бурь на месяц – вот уже много лет официально используют в своей работе медики скорой помощи.</p>
+							<p>В 2006 году в «АиФ» в Украине» появилась рубрика «Доброе сердце», которая размещает информацию о больных детях. Благодаря «Доброму сердцу» сотни больных детей получили возможность лечиться как в Украине, так и за рубежом.</p>
+							<p>С 2011 года еженедельник начал выходить в цвете.</p>
+							<p>В 2002 году еженедельник награжден премией «Золотое перо» в номинации «Лучший еженедельник СНГ, выходящий в Украине», а в 2005 году на Всеукраинском конкурсе «Обложка года» газета «АиФ» в Украине» награждена в номинации «Признание».</p>
+							<p>Сегодня еженедельник – это современное общественно-политическое издание, выходящее общим тиражом 135 тыс. экземпляров под слоганом «Объясняем, что происходит». Каждую среду читатели «АиФ» из первых уст получают самую достоверную информацию о событиях в Украине, а также глубокий анализ происходящего в стране. Известные политики, эксперты и знаменитости рассказывают о самом важном, обсуждают наиболее значимое и спорят друг с другом на самые злободневные темы на страницах нашей газеты.</p>
+							<p>Вся информация из еженедельника, а также прямые линии, онлайн трансляции со знаменитостями и ежедневная лента новостей Украины и мира доступна нашим читателям также на сайте aif.ua.</p>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-md-4 text-right">
+							<a href="https://www.facebook.com/AiFua" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+							<a href="https://www.youtube.com/user/AiFUkraine" target="_blank"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a>
+							<a href="https://twitter.com/aif_ukr" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+						</div>
+						<div class="col-md-3">
+							<a href="http://www.aif.ua/" target="_blank">www.aif.ua</a>
+						</div>
+						<div class="col-md-5">
+							<p>Адрес редакции:</p>
+							<p>Украина, Киев, ул. Кирилловская, 104А, 6 эт</p>
+							<p>+38 (44) 205 43 01</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="izd-eg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><img alt="alt" src="images/lightbox-icon-close-compact.png"></button>
+				</div>
+				<div class="modal-body">
+					I eg
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="izd-forbes" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><img alt="alt" src="images/lightbox-icon-close-compact.png"></button>
+				</div>
+				<div class="modal-body">
+					I forbes
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="izd-sovsekr" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><img alt="alt" src="images/lightbox-icon-close-compact.png"></button>
+				</div>
+				<div class="modal-body">
+					I sovsekr
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="izd-money" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><img alt="alt" src="images/lightbox-icon-close-compact.png"></button>
+				</div>
+				<div class="modal-body">
+					I money
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="izd-korrespondent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><img alt="alt" src="images/lightbox-icon-close-compact.png"></button>
+				</div>
+				<div class="modal-body">
+					I korrespondent
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="int-fdmd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><img alt="alt" src="images/lightbox-icon-close-compact.png"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-4">
+							<img src="images/logo-internet/fdmd.png">
+						</div>
+						<div class="col-md-8">
+							<p>Food & Mood - появился в 2016 году на фоне роста интереса аудитории к различным фестивалям уличной еды, маркетам крафтовой продукции, а также роста украинских фермерских хозяйств, производящих органическую продукцию.</p>
+							<p>Наша аудитория - средний класс, который хочет питаться вкусной и здоровой пищей, а также узнавать о новых тенденциях, читать кулинарные лайфхаки и советы от звезд.</p>
+							<p>Уникальность Food & Mood - рубрика UAmade, где мы в обзорах и интервью рассказываем о натуральной еде украинского производства.</p>
+							<p>В среднем нас читает 70 тысяч человек в месяц.</p>
+						</div>
+					</div><hr>
+					<div class="row">
+						<div class="col-md-4 text-right">
+							<a href="https://www.facebook.com/foodandmood.ua/" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+							<a href="https://www.instagram.com/foodandmood.ua/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+						</div>
+						<div class="col-md-3">
+							<a href="http://foodandmood.com.ua/" target="_blank">foodandmood.com.ua</a>
+						</div>
+						<div class="col-md-5">
+							<p>Адрес редакции:</p>
+							<p>Украина, Киев, ул. Кирилловская, 104А, 6 эт</p>
+							<p>+38 (44) 205 43 01</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="int-tocka" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><img alt="alt" src="images/lightbox-icon-close-compact.png"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-4">
+							<img src="images/logo-internet/tochka.png">
+						</div>
+						<div class="col-md-8">
+							<p><a href="http://tochka.net/" target="_blank">tochka.net</a> – женский онлайн-ресурс о моде, красоте, шоу-бизнесе, отношениях и стиле жизни. Новости, обзоры и мнения экспертов, авторские материалы редакторов и колумнистов. Создавался в январе 2010 года. В конце февраля 2014-го сайт перезапустился в новом дизайне. Сегодня tochka.net – крупнейший женский онлайн-ресурс в Украине.</p>
+							<p>tochka.net будет интересна тебе, если ты:  активная, коммуникабельная, для тебя важно быть в тренде, ты интересуешься путешествиями (на сайте можно приобрести онлайн ж/д и авиабилеты), жизнью знаменитостей, кино, поддерживаешь себя в хорошей спортивной форме и следишь за гастрономическими новинками.</p>
+							<p>Контент публикуется на русском и украинском языках. tochka.net предлагает тебе интересные публикации новостного характера, собственные репортажи, фото- и видеоотчеты, эксклюзивные материалы журналистов, которые зачастую дополняются мнениями экспертов и блогеров.</p>
+							<p>Сайт состоит из 6 основных разделов: шоу-бизнес, стиль, семья, путешествия, гурман, досуг, и в течение дня радует своих читательниц увлекательными материалами на самую разную тематику – каждый найдет для себя нечто особенное.</p>
+							<p>А на страницах tochka.net в <a href="https://www.facebook.com/tochka.net" target="_blank">Facebook</a> и <a href="https://www.instagram.com/tochka_net/" target="_blank">Instagram</a> ты можешь смотреть самые главные и интересные новости ресурса.</p>
+							<p>Мы ждем тебя!</p>
+						</div>
+					</div><hr>
+					<div class="row">
+						<div class="col-md-4 text-right">
+							<a href="https://www.facebook.com/tochka.net" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+							<a href="https://www.instagram.com/tochka_net/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+
+							<a href="https://www.youtube.com/channel/UCp90k6jANh6nkBICCLzfKcA" target="_blank"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a>
+							<a href="https://plus.google.com/116058813508196124818" target="_blank"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
+							<a href="https://twitter.com/tochka_net" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+							<a href="https://chats.viber.com/tochka.net" target="_blank"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a>
+						</div>
+						<div class="col-md-3">
+							<a href="http://tochka.net/" target="_blank">tochka.net</a>
+						</div>
+						<div class="col-md-5">
+							<p>Адрес редакции:</p>
+							<p>Украина, Киев, ул. Кирилловская, 104А, 6 эт</p>
+							<p>+38 (44) 205 43 01</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="temp-window" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><img alt="alt" src="images/lightbox-icon-close-compact.png"></button>
+				</div>
+				<div class="modal-body">
+						Template window
+				</div>
+			</div>
+		</div>
+	</div>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel='stylesheet' href='css/unite-gallery.css' type='text/css' />
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src='js/bootstrap.min.js'></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-select.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script type='text/javascript' src='js/unitegallery.js'></script>
+	<script type='text/javascript' src='js/ug-theme-carousel.js'></script>
+	<script type='text/javascript' src='js/jquery.sticky.js'></script>
+	<script type='text/javascript' src='js/bootstrap-select.min.js'></script>
+	<script type='text/javascript' src='js/swiper.jquery.min.js'></script>
+	<script type='text/javascript'>
+		var swiper = new Swiper('.swiper-container',
+		{
+			pagination: '.swiper-pagination',
+			slidesPerView: 3,
+			paginationClickable: true,
+			spaceBetween: 30
+		});
+		//инициализация галереи
+		jQuery(document).ready(function(){
+			jQuery("#gallery1").unitegallery({
+			theme_enable_navigation: true,
+			theme_navigation_position: "bottom",
+			tile_as_link:true,
+			tile_enable_border:false,
+			tile_link_newpage: false,
+			tile_width:220,
+			tile_height:120,
+			carousel_space_between_tiles:10
+			});
+			jQuery("#gallery2").unitegallery({
+			theme_enable_navigation: true,
+			theme_navigation_position: "bottom",
+			tile_as_link:true,
+			tile_enable_border:false,
+			tile_link_newpage: false,
+			tile_width:220,
+			tile_height:120,
+			carousel_space_between_tiles:10
+			});
+			jQuery("#gallery-team-all").unitegallery({
+			theme_enable_navigation: true,
+			tile_as_link:true,
+			tile_link_newpage: true,
+			tile_enable_textpanel:false,
+			//carousel_autoplay: false,
+			tile_width:365,
+			tile_height:188,
+			carousel_space_between_tiles:10
+			});
+
+		});
+		$(document).ready(function(){$("#stiky").sticky({ topSpacing: 0.1 });});
+		$(document).ready(function(){$("#stiky2").sticky({ topSpacing: 76 });});
+		//Задаем размер лого после загрузки окна
+		$(window).load(function()
+		{
+			if ($('#stiky').css('position') == 'fixed')
+			{
+				$('#logo-img').removeClass('svg-big');
+				$('#logo-img').addClass('svg-middle');
+			}
+			else
+			{
+				$('#logo-img').addClass('svg-big');
+				$('#logo-img').removeClass('svg-middle');
+			}
+		});
+		//Меняем размер лого при прокрутке
+		$(window).on('scroll', function()
+		{
+			if ($('#stiky2').css('position') == 'fixed')
+			{
+				$('#logo-img').removeClass('svg-big');
+				$('#logo-img').addClass('svg-middle');
+			}
+			else
+			{
+				$('#logo-img').addClass('svg-big');
+				$('#logo-img').removeClass('svg-middle');
+			}
+		});
+		//позиционирование при переходе к якорю в зависимости от размера окна и позиции на страници
+		var w = $(document).width();
+		if(w>767)
+		{
+			$(document).ready(function()
+			{
+				$('.go_to').click( function()
+				{
+				var scroll_el = $(this).attr('href');
+				if ($(scroll_el).length != 0) {
+					if($("#logo-img").hasClass("svg-big"))
+					{
+						$('html, body').animate({ scrollTop: $(scroll_el).offset().top-210 }, 800); // анимируем скроолинг к элементу scroll_el
+					}
+					else
+					{
+						$('html, body').animate({ scrollTop: $(scroll_el).offset().top-100 }, 800); // анимируем скроолинг к элементу scroll_el
+					}
+				}
+				return false;
+				});
+			});
+		}
+		else
+		{
+			$(document).ready(function()
+			{
+				$('.go_to').click( function()
+				{
+					var scroll_el = $(this).attr('href');
+					if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+						if($("#logo-img").hasClass("svg-middle"))
+						{
+							$('html, body').animate({ scrollTop: $(scroll_el).offset().top-260 }, 800); // анимируем скроолинг к элементу scroll_el
+						}
+						else
+						{
+							$('html, body').animate({ scrollTop: $(scroll_el).offset().top-500 }, 800); // анимируем скроолинг к элементу scroll_el
+						}
+
+					}
+					return false;
+				});
+			});
+		};
+
+		//показать скрыть меню
+		(function()
+		{ "use strict";
+			var toggles = document.querySelectorAll(".toggle-hamburger");
+			for (var i = toggles.length - 1; i >= 0; i--)
+			{
+				var toggle = toggles[i];
+				toggleHandler(toggle);
+			};
+			function toggleHandler(toggle)
+			{
+				toggle.addEventListener( "click", function(e) {
+					e.preventDefault();
+					(this.classList.contains("is-active") === true) ? $('#menu').hide():$('#menu').show();
+					(this.classList.contains("is-active") === true) ? this.classList.remove("is-active"):this.classList.add("is-active");
+				});
+			}
+		})();
+
+		// preloader
+		$(window).on('load', function () {
+			$preloader = $('.areaForLoader'),
+			$loader = $preloader.find('.preloader');
+			 $loader.fadeOut();
+			$preloader.delay(350).fadeOut('slow');
+		});
+	</script>
+	</body>
+</html>
