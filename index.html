@@ -1313,7 +1313,7 @@
 	<script type='text/javascript' src='js/bootstrap-select.min.js'></script>
 	<script type='text/javascript' src='js/swiper.jquery.min.js'></script>
 	<script type='text/javascript'>
-		var swiper = new Swiper('.swiper-container', 
+		var swiper = new Swiper('.swiper-container',
 		{
 			pagination: '.swiper-pagination',
 			slidesPerView: 3,
@@ -1355,7 +1355,7 @@
 
 		});
 		$(document).ready(function(){$("#stiky").sticky({ topSpacing: 0.1 });});
-		$(document).ready(function(){$("#stiky2").sticky({ topSpacing: 78 });});
+		$(document).ready(function(){$("#stiky2").sticky({ topSpacing: 76 });});
 		//Задаем размер лого после загрузки окна
 		$(window).load(function()
 		{
@@ -1371,9 +1371,9 @@
 			}
 		});
 		//Меняем размер лого при прокрутке
-		$(document).on('scroll', function()
+		$(window).on('scroll', function()
 		{
-			if ($('#stiky').css('position') == 'fixed')
+			if ($('#stiky2').css('position') == 'fixed')
 			{
 				$('#logo-img').removeClass('svg-big');
 				$('#logo-img').addClass('svg-middle');
@@ -1434,7 +1434,7 @@
 		(function()
 		{ "use strict";
 			var toggles = document.querySelectorAll(".toggle-hamburger");
-			for (var i = toggles.length - 1; i >= 0; i--) 
+			for (var i = toggles.length - 1; i >= 0; i--)
 			{
 				var toggle = toggles[i];
 				toggleHandler(toggle);
