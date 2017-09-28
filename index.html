@@ -25,7 +25,7 @@
 		}*/
 		.preloader {
       margin: 300px auto;
-      width: 70px;
+      width: 133px;
       height: 30px;
       text-align: center;
       font-size: 10px;
@@ -79,6 +79,7 @@
 		</style>
 		<div class="areaForLoader">
    		<div class="preloader">
+				<img style="preload-logo;margin-bottom: 25px;width: 133px;filter: grayscale;filter: brightness(0) invert(1);" src="images/umh-logo.svg">
 				<div class="circ1"></div>
     	  <div class="circ2"></div>
     	  <div class="circ3"></div>
@@ -1451,7 +1452,7 @@
 		$(window).on('load', function () {
 			$preloader = $('.areaForLoader'),
 			$loader = $preloader.find('.preloader');
-			 $loader.fadeOut();
+			$loader.fadeOut();
 			$preloader.delay(350).fadeOut('slow');
 		});
 	</script>
